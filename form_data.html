@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="refresh" content="3">
+    <title>Form Data</title>
+    <style>
+        /* Styling for the copy button */
+        .copy-btn {
+            margin-left: 10px;
+            padding: 5px 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-size: 12px;
+            border-radius: 4px;
+        }
+
+        .copy-btn:hover {
+            background-color: #45a049;
+        }
+
+        .copy-content {
+            background-color: #f0f0f0;
+            padding: 3px;
+            border-radius: 4px;
+        }
+    </style>
+ <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        // Add event listeners to all copy buttons
+        const copyButtons = document.querySelectorAll('.copy-btn');
+        
+        copyButtons.forEach(button => {
+            button.addEventListener('click', function() {
+                // Get the content to copy: the inner text of the .copy-content span
+                const contentToCopy = button.previousElementSibling.innerText;
+
+                // Create a temporary textarea element to copy the content
+                const textarea = document.createElement('textarea');
+                textarea.value = contentToCopy;
+                document.body.appendChild(textarea);
+                textarea.select();
+                document.execCommand('copy'); // This copies the content to the clipboard
+                document.body.removeChild(textarea);
+
+                // Optionally, change the button text to show "Copied!"
+               this.textContent = "Copied!"; // Change text
+this.style.backgroundColor = "blue"; // Change button color to blue
+setTimeout(() => {
+  this.textContent = "Copy"; // Reset text
+  this.style.backgroundColor = ""; // Reset button color to original
+}, 500); // After 0.5 second
+            });
+        });
+    });
+</script>
+
+</head>
+<body>
+
+
+<p><strong>Link is Activated</strong></p>
+    <!-- The content will be dynamically inserted here by the PHP script -->
+</body>
+</html>
